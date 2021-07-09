@@ -8,9 +8,9 @@ function mostrarDescuento()
 	var importe;
 	var descuento;
 	var importeConDescuento;
-	importe = document.getElementById("txtIdSueldo").value;
-	sueldo = parseInt(sueldo);
+	importe = prompt("Ingrese el importe:");
+	importe = parseInt(sueldo);
 	descuento = importe * 25 / 100;
 	importeConDescuento = importe - descuento;
-	document.getElementById("txtIdResultado").value = importeConDescuento;	
+	alert("El importe final es: " + importeConDescuento);	
 }

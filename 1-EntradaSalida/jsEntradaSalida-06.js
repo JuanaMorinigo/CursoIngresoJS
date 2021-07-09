@@ -7,8 +7,10 @@ function sumar()
 	var primerNumero;
 	var segundoNumero;
 	var resultado;
-	primerNumero = parseInt(document.getElementById("txtIdNumeroUno").value);
-	segundoNumero = parseInt(document.getElementById("txtIdNumeroDos").value);
+	primerNumero = document.getElementById("txtIdNumeroUno").value;
+	primerNumero = parseInt(primerNumero);
+	segundoNumero = document.getElementById("txtIdNumeroDos").value;
+	segundoNumero = parseInt(segundoNumero);
 	resultado = primerNumero + segundoNumero;
 	alert("La suma de los números es igual a: " + resultado);
 }
