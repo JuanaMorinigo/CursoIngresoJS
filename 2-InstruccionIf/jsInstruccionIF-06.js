@@ -3,15 +3,19 @@ o adolescente (entre 13 y 17 años) o niño (menor a 13 años)*/
 function mostrar()
 {
 	var edad;
-	edad = parseInt(document.getElementById("txtIdEdad").value);  
-	if(edad >= 18){
+	edad = document.getElementById("txtIdEdad").value; 
+	edad = parseInt(edad); 
+	if(edad > 17){
 		alert("Usted es adulto");
 	}
-	else if (edad >= 13 && edad <=17 ){
+	else
+	{
+		if (edad > 13 ){
 		alert("Usted es adolescente");
-	}
-	else if (edad < 13){
+		}
+		else{
 		alert("Usted es un niño");
-
+		}
 	}
+
 }	

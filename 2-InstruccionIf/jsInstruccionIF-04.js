@@ -2,7 +2,9 @@
 edad entre 13 y 17 años (inclusive)*/
 function mostrar()
 {
-	var edad = parseInt(document.getElementById("txtIdEdad").value); 
+	var edad;
+	edad = document.getElementById("txtIdEdad").value; 
+	edad = parseInt(edad);
 	if(edad>= 13 && edad<=17){
 		alert("Usted es adolescente");
 	}
